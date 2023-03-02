@@ -34,11 +34,11 @@ function selectionPage() {
   var baseString = `${url}&method=${method}&timestamp=${timestamp}`
 
   var postData = JSON.stringify({
-    fiatAmount: 100,
-    cryptoCurrency: currChain.id,
-    fiatCurrency: "NZD",
+    fiatAmount: 1000,
+    cryptoCurrency: "USDT",
+    fiatCurrency: "USD",
     isBuyOrSell: "BUY",
-    network: "arbitrum",
+    network: "ethereum",
     paymentMethod: "credit_debit_card",
   })
 
