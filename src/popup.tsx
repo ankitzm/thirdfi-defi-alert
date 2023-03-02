@@ -1,26 +1,23 @@
-import {
+import React, {
   useState, useEffect
 } from "react"
-
-import { CountButton } from "./features/count-button"
+import moment from "moment"
+import CryptoJS from "crypto-js"
 
 import "~base.css"
 import "~style.css"
+import SelectionPage from "~selectionPage"
+import Data from "./../hel.json"
 
 function IndexPopup() {
-
-  var data = JSON.stringify({
-    fiatAmount: 10000,
-    cryptoCurrency: "USDT",
-    fiatCurrency: "INR",
-    isBuyOrSell: "BUY",
-    network: "ethereum",
-    paymentMethod: "upi",
-  })
-
   return (
-    <div className="flex flex-row items-center justify-center h-16 w-40">
-      <CountButton />
+    <div className="flex flex-col items-center justify-center h-96 w-64 border-2">
+      <button>
+        get it here
+      </button>
+
+      <SelectionPage chainData={Data} />
+
     </div>
   )
 }

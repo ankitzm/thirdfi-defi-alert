@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import { ReactSearchAutocomplete } from "react-search-autocomplete"
 
-import Data from "./../hel.json"
 import moment from "moment"
 import CryptoJS from "crypto-js"
 
+interface ChainProp {
+  id: string,
+  name: string,
+  network: string,
+  fiatCurrenciesNotSupported: Array<Object>
+}
 
-function selectionPage() {
+interface FiatProp {
+  id: string,
+  name: string
+}
+
+function selectionPage({ chainData }) {
 
   const [chainList, setChainList] = useState([])
   const [currChain, setCurrChain] = useState({
@@ -21,7 +31,22 @@ function selectionPage() {
     ]
   })
 
+  const [currFiat, setCurrFiat] = useState({
+    "id": "USD",
+    "name": "US Dollar",
+  })
+
   var chainName = []
+  var fiatList = [
+    {
+      "id": "USD",
+      "name": "US Dollar",
+    },
+    {
+      "id": "EUR",
+      "name": "Euro",
+    }
+  ]
 
   const timestamp = moment().unix()
 
@@ -35,15 +60,12 @@ function selectionPage() {
 
   var postData = JSON.stringify({
     fiatAmount: 1000,
-    cryptoCurrency: "USDT",
-    fiatCurrency: "USD",
+    cryptoCurrency: currChain.id,
+    fiatCurrency: currFiat.id,
     isBuyOrSell: "BUY",
-    network: "ethereum",
+    network: currChain.network,
     paymentMethod: "credit_debit_card",
   })
-
-  console.log(postData);
-
 
   if (postData) baseString += `&body=${JSON.stringify(JSON.parse(postData))}`
 
@@ -73,13 +95,11 @@ function selectionPage() {
       .catch(err => console.error(err))
   }
 
-  var uniqueItems = []
 
   useEffect(() => {
+    var uniqueItems = []
 
-    console.log("fsj : ", Data);
-
-    Data.forEach(item => {
+    chainData.forEach(item => {
       const key = item.coinId;
 
       if (!uniqueItems[key]) {
@@ -92,27 +112,23 @@ function selectionPage() {
         uniqueItems[key] = item;
       }
     });
+
     setChainList(chainName)
-
-    console.log('lmlmlknkfdj');
-
-    console.log(uniqueItems);
-
-    console.log(Object.values(uniqueItems));
   }, [])
-
-  console.log("...");
-  console.log(chainList);
 
 
   const handleOnSearch = (string, results) => {
     console.log(string, results);
   };
 
-  const handleOnSelect = (item) => {
+  const handleOnSelectCrypto = (item) => {
     console.log(item);
     console.log("selected");
     setCurrChain(item)
+  };
+
+  const handleOnSelectFiat = (item) => {
+    setCurrFiat(item)
   };
 
   // const handleOnHover = (result) => {
@@ -131,18 +147,26 @@ function selectionPage() {
   return (
     <>
       <div style={{ width: 200, margin: 20 }}>
-        <h2>10000 items!</h2>
-        <div style={{ marginBottom: 20 }}>Select Crypto</div>
         <ReactSearchAutocomplete
           items={chainList}
           maxResults={4}
           onSearch={handleOnSearch}
-          onSelect={handleOnSelect}
+          onSelect={handleOnSelectCrypto}
           fuseOptions={{ keys: ["id", "name"] }}  // searchable items
           styling={{ zIndex: 3 }}
-          // onHover={handleOnHover}
-          onFocus={handleOnFocus}
-        // onClear={handleOnClear}
+          showIcon={false}
+          placeholder={"Select Crypto"}
+        />
+        <br />
+
+        <ReactSearchAutocomplete
+          items={fiatList}
+          onSearch={handleOnSearch}
+          onSelect={handleOnSelectFiat}
+          fuseOptions={{ keys: ["id", "name"] }}  // searchable items
+          styling={{ zIndex: 3 }}
+          showIcon={false}
+          placeholder={"Select Fiat Currency"}
         />
       </div>
 
