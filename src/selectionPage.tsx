@@ -20,9 +20,9 @@ function selectionPage({ chainData }) {
 
   const [chainList, setChainList] = useState([])
   const [currChain, setCurrChain] = useState({
-    "id": "SLP",
+    "id": "ETH",
     "name": "smooth-love-potion",
-    "network": "ronin",
+    "network": "ethereum",
     "fiatCurrenciesNotSupported": [
       {
         "fiatCurrency": "USD",
@@ -35,6 +35,9 @@ function selectionPage({ chainData }) {
     "id": "USD",
     "name": "US Dollar",
   })
+
+  const [cryptoPrice, setCryptoPrice] = useState(null)
+  const [targetPrice, setTargetPrice] = useState(null)
 
   var chainName = []
   var fiatList = [
@@ -91,7 +94,15 @@ function selectionPage({ chainData }) {
       options,
     )
       .then(response => response.json())
-      .then(response => console.log(response))
+      .then(response => {
+        console.log(response)
+        if (response.statusCode !== 201) return
+
+        var price = 1 / response.data.marketConversionPrice
+        setCryptoPrice(price)
+        localStorage.setItem("crypto", currChain.id)
+        localStorage.setItem("fiat", currFiat.id)
+      })
       .catch(err => console.error(err))
   }
 
@@ -135,9 +146,9 @@ function selectionPage({ chainData }) {
   //   console.log(result);
   // };
 
-  const handleOnFocus = () => {
-    console.log("Focused");
-  };
+  // const handleOnFocus = () => {
+  //   console.log("Focused");
+  // };
 
   // const handleOnClear = () => {
   //   console.log("Cleared");
@@ -145,35 +156,53 @@ function selectionPage({ chainData }) {
 
 
   return (
-    <>
-      <div style={{ width: 200, margin: 20 }}>
-        <ReactSearchAutocomplete
-          items={chainList}
-          maxResults={4}
-          onSearch={handleOnSearch}
-          onSelect={handleOnSelectCrypto}
-          fuseOptions={{ keys: ["id", "name"] }}  // searchable items
-          styling={{ zIndex: 3 }}
-          showIcon={false}
-          placeholder={"Select Crypto"}
-        />
-        <br />
+    <div className='flex flex-col items-center justify-center'>
+      {
+        cryptoPrice ?
+          <div style={{ width: 200, margin: 20 }}>
+            <ReactSearchAutocomplete
+              items={chainList}
+              maxResults={4}
+              onSearch={handleOnSearch}
+              onSelect={handleOnSelectCrypto}
+              fuseOptions={{ keys: ["id", "name"] }}  // searchable items
+              styling={{ zIndex: 1 }}
+              showIcon={false}
+              placeholder={"Select Crypto"}
+            />
+            <br />
 
-        <ReactSearchAutocomplete
-          items={fiatList}
-          onSearch={handleOnSearch}
-          onSelect={handleOnSelectFiat}
-          fuseOptions={{ keys: ["id", "name"] }}  // searchable items
-          styling={{ zIndex: 3 }}
-          showIcon={false}
-          placeholder={"Select Fiat Currency"}
-        />
-      </div>
+            <ReactSearchAutocomplete
+              items={fiatList}
+              onSearch={handleOnSearch}
+              onSelect={handleOnSelectFiat}
+              fuseOptions={{ keys: ["id", "name"] }}  // searchable items
+              styling={{ zIndex: 0 }}
+              showIcon={false}
+              placeholder={"Select Fiat Currency"}
+            />
 
-      <button onClick={getData}>
-        data fetch fr
-      </button>
-    </>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={getData}>
+              Fetch Price
+            </button>
+
+          </div>
+
+          :
+          <div className="mt-3 flex flex-col items-center justify-center text-base">
+            <div>
+              {`Current Price - ${cryptoPrice}`}
+            </div>
+
+            <input type="text" placeholder="Placeholder" className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setTargetPrice(e.target.value)} />
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3" onClick={() => {
+              localStorage.setItem("targetPrice", targetPrice)
+            }}>
+              Set target
+            </button>
+          </div>
+      }
+    </div>
   )
 }
 

@@ -10,13 +10,15 @@ import SelectionPage from "~selectionPage"
 import Data from "./../hel.json"
 
 function IndexPopup() {
+
+
   return (
     <div className="flex flex-col items-center justify-center h-96 w-64 border-2">
-      <button>
-        get it here
-      </button>
-
-      <SelectionPage chainData={Data} />
+      {
+        (localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("targetPrice") !== null) ?
+          <>vdsvsrsf</> :
+          <SelectionPage chainData={Data} />
+      }
 
     </div>
   )
