@@ -101,6 +101,7 @@ function selectionPage({ chainData }) {
         var price = 1 / response.data.marketConversionPrice
         setCryptoPrice(price)
         localStorage.setItem("crypto", currChain.id)
+        localStorage.setItem("network", currChain.network)
         localStorage.setItem("fiat", currFiat.id)
       })
       .catch(err => console.error(err))
@@ -158,7 +159,7 @@ function selectionPage({ chainData }) {
   return (
     <div className='flex flex-col items-center justify-center'>
       {
-        cryptoPrice ?
+        !cryptoPrice ? <>
           <div style={{ width: 200, margin: 20 }}>
             <ReactSearchAutocomplete
               items={chainList}
@@ -181,13 +182,12 @@ function selectionPage({ chainData }) {
               showIcon={false}
               placeholder={"Select Fiat Currency"}
             />
-
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={getData}>
-              Fetch Price
-            </button>
-
           </div>
 
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 rounded" onClick={getData}>
+            Fetch Price
+          </button>
+        </>
           :
           <div className="mt-3 flex flex-col items-center justify-center text-base">
             <div>
@@ -195,10 +195,10 @@ function selectionPage({ chainData }) {
             </div>
 
             <input type="text" placeholder="Placeholder" className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setTargetPrice(e.target.value)} />
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3" onClick={() => {
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3 w-auto" onClick={() => {
               localStorage.setItem("targetPrice", targetPrice)
             }}>
-              Set target
+              Set Target Price
             </button>
           </div>
       }
