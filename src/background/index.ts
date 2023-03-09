@@ -2,7 +2,6 @@ export { }
 import moment from "moment"
 import CryptoJS from "crypto-js"
 
-
 var apiKey = process.env.API_KEY
 var secretKey = process.env.CLIENT_SECRET
 
@@ -14,22 +13,23 @@ console.log(
     "Live now; make now always the most precious time. Now will never come again."
 )
 
-var cryptoCurr: string, network: string, fiat: string, targetPrice: any
+var cryptoCurr: string, network: string, fiat: string, targetPrice: number, updatedPrice
 
 chrome.alarms.create({
-    periodInMinutes: 1 / 3,
+    periodInMinutes: 1 / 6,
     delayInMinutes: 0
 })
 
+setInterval(() => {
+    chrome.storage.local.get(["crypto", "network", "fiat", "targetPrice"], (res) => {
+        cryptoCurr = res.crypto
+        network = res.network
+        fiat = res.fiat
+        targetPrice = res.targetPrice
+        console.log(res);
+    })
+}, 20 * 1000)
 
-chrome.storage.local.get(["crypto", "network", "fiat", "targetPrice"], (res) => {
-    cryptoCurr = res.crypto
-    network = res.network
-    fiat = res.fiat
-    targetPrice = res.targetPrice
-
-    console.log(res);
-})
 
 chrome.alarms.onAlarm.addListener((alarm) => {
     if (cryptoCurr && network && fiat && targetPrice) {
@@ -71,27 +71,23 @@ chrome.alarms.onAlarm.addListener((alarm) => {
             )
                 .then(response => response.json())
                 .then(response => {
-                    console.log("updated price - ", 1 / response.data.conversionPrice)
+                    console.log("updated price - ", (1 / response.data.conversionPrice).toFixed(4))
 
-                    chrome.storage.local.set({
-                        updatedPrice: 1 / response.data.conversionPrice,
-                    })
+                    updatedPrice = (1 / response.data.conversionPrice).toFixed(4)
                 })
                 .catch(err => console.error(err))
+
+            if (targetPrice - 2 < updatedPrice && updatedPrice < targetPrice + 2) {
+
+                chrome.notifications.create(
+                    "notification",
+                    { type: 'basic', iconUrl: "https://i.imgur.com/xtGkeHM.jpeg", title: `${cryptoCurr} price reached ${updatedPrice} ${fiat}`, message: "some message" }
+                )
+            }
         }
 
         getData()
     } else console.log("none");
 
     console.log(alarm);
-    // chrome.storage.local.get(["timer"], (res) => {
-    //     const time = res.timer ?? 0
-    //     chrome.storage.local.set({
-    //         timer: time + 1,
-    //     })
-
-    //     chrome.action.setBadgeText({
-    //         text: `${time + 1}`
-    //     })
-    // })
 })

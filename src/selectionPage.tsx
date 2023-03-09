@@ -20,20 +20,13 @@ function selectionPage({ chainData }) {
 
   const [chainList, setChainList] = useState([])
   const [currChain, setCurrChain] = useState({
-    "id": "ETH",
-    "name": "smooth-love-potion",
-    "network": "ethereum",
-    "fiatCurrenciesNotSupported": [
-      {
-        "fiatCurrency": "USD",
-        "paymentMethod": "credit_debit_card"
-      }
-    ]
+    "id": "",
+    "name": "",
+    "network": ""
   })
 
   const [currFiat, setCurrFiat] = useState({
-    "id": "USD",
-    "name": "US Dollar",
+    "id": ""
   })
 
   const [cryptoPrice, setCryptoPrice] = useState(null)
@@ -56,7 +49,7 @@ function selectionPage({ chainData }) {
   var apiKey = process.env.API_KEY
   var secretKey = process.env.CLIENT_SECRET
 
-  var url = "https://api.securo.dev/api/v1/payment/currency-price"
+  var url = "https://api.thirdfi.org/api/v1/payment/currency-price"
   var method = "POST"
 
   var baseString = `${url}&method=${method}&timestamp=${timestamp}`
@@ -159,8 +152,9 @@ function selectionPage({ chainData }) {
   return (
     <div className='flex flex-col items-center justify-center'>
       {
-        !cryptoPrice ? <>
-          <div style={{ width: 200, margin: 20 }}>
+        // !cryptoPrice
+        !(localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("fiat")) ? <>
+          <div className="w-48">
             <ReactSearchAutocomplete
               items={chainList}
               maxResults={4}
@@ -171,32 +165,50 @@ function selectionPage({ chainData }) {
               showIcon={false}
               placeholder={"Select Crypto"}
             />
-            <br />
-
-            <ReactSearchAutocomplete
-              items={fiatList}
-              onSearch={handleOnSearch}
-              onSelect={handleOnSelectFiat}
-              fuseOptions={{ keys: ["id", "name"] }}  // searchable items
-              styling={{ zIndex: 0 }}
-              showIcon={false}
-              placeholder={"Select Fiat Currency"}
-            />
+            <div className='mt-3'>
+              <ReactSearchAutocomplete
+                items={fiatList}
+                onSearch={handleOnSearch}
+                onSelect={handleOnSelectFiat}
+                fuseOptions={{ keys: ["id", "name"] }}  // searchable items
+                styling={{ zIndex: 0 }}
+                showIcon={false}
+                placeholder={"Select Fiat Currency"}
+              />
+            </div>
           </div>
 
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 rounded" onClick={getData}>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white text-base font-bold py-2 px-4 mt-4 rounded" onClick={() => {
+            !(currChain.id == "" && currFiat.id == "") ? getData() : window.alert("please provide input to above field")
+          }}>
             Fetch Price
           </button>
         </>
           :
-          <div className="mt-3 flex flex-col items-center justify-center text-base">
-            <div>
-              {`Current Price - ${cryptoPrice}`}
+          <div className="w-48 flex flex-col items-center justify-center text-base">
+            <div className="font-semibold">
+              {`Crypto - ${currChain.id}`}
+            </div>
+            <div className='font-semibold mt-2'>
+              {`Price - ${cryptoPrice}`}
             </div>
 
-            <input type="text" placeholder="Placeholder" className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setTargetPrice(e.target.value)} />
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3 w-auto" onClick={() => {
+            <input type="text" placeholder="target price" className="px-3 w-full py-3 mt-4 placeholder-slate-400 text-slate-900 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setTargetPrice(e.target.value)} />
+            <button className="bg-blue-500 hover:bg-blue-700 text-white text-base font-bold py-2 px-4 mt-4 rounded w-full" onClick={() => {
               localStorage.setItem("targetPrice", targetPrice)
+
+              chrome.storage.local.set({
+                crypto: localStorage.getItem("crypto")
+              })
+              chrome.storage.local.set({
+                network: localStorage.getItem("network")
+              })
+              chrome.storage.local.set({
+                fiat: localStorage.getItem("fiat")
+              })
+              chrome.storage.local.set({
+                targetPrice: localStorage.getItem("targetPrice")
+              })
             }}>
               Set Target Price
             </button>

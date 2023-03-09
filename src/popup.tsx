@@ -17,7 +17,7 @@ function IndexPopup() {
   var apiKey = process.env.API_KEY
   var secretKey = process.env.CLIENT_SECRET
 
-  var url = "https://api.securo.dev/api/v1/payment/currency-price"
+  var url = "https://api.thirdfi.org/api/v1/payment/currency-price"
   var method = "POST"
 
   var baseString = `${url}&method=${method}&timestamp=${timestamp}`
@@ -57,25 +57,41 @@ function IndexPopup() {
       .then(response => response.json())
       .then(response => {
         console.log(response)
-        setUpdatedPrice(1 / response.data.marketConversionPrice)
+        setUpdatedPrice((1 / response.data.marketConversionPrice))
       })
       .catch(err => console.error(err))
   }
 
   localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("targetPrice") !== null ?
-    setInterval(getData, 10 * 1000) : null
+    getData() : null
+
+  // useEffect(() => {
+  //   getData()
+  // }, [])
 
   useEffect(() => {
-    getData
-  }, [])
+    chrome.storage.local.get(["updatedPrice"], (res) => {
+      setUpdatedPrice(res.updatedPrice)
+    })
+
+  }, [60 * 1000])
+
+
   return (
-    <div className="flex flex-col items-center justify-center h-96 w-64 border-2">
+    <div className="flex flex-col items-center justify-center h-96 w-64 border-none bg-slate-900 text-white text-2xl">
       {
         (localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("targetPrice") !== null) ?
 
-          <div>
-            Target Price - {localStorage.getItem("targetPrice")}
-            Current Price - {updatedPrice}
+          <div className="flex flex-col items-center justify-center mx-4 gap-4">
+            <div className="">
+              Target Price - {localStorage.getItem("targetPrice")}
+            </div>
+            {
+              updatedPrice ?
+                <div className="">
+                  Current Price - {updatedPrice}
+                </div> : ""
+            }
           </div> :
           <SelectionPage chainData={Data} />
       }
