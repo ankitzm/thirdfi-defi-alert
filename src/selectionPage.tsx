@@ -179,7 +179,7 @@ function selectionPage({ chainData }) {
               {`Crypto - ${currChain.id}`}
             </div>
             <div className='font-semibold mt-2'>
-              {`Price - ${cryptoPrice}`}
+              {`Price - ${cryptoPrice ? cryptoPrice.toFixed(4) : ""}`}
             </div>
 
             <input type="text" placeholder="target price" className="px-3 w-full py-3 mt-4 placeholder-slate-400 text-slate-900 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setTargetPrice(e.target.value)} />

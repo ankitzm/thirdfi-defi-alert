@@ -7,7 +7,7 @@ import CryptoJS from "crypto-js"
 import "~base.css"
 import "~style.css"
 import SelectionPage from "~selectionPage"
-import Data from "./../hel.json"
+import Data from "./../ChainData.json"
 import Logo from "./assets/thirdFi.png"
 
 function IndexPopup() {

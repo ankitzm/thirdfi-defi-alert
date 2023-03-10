@@ -1,0 +1,5388 @@
+[
+  {
+    "coinId": "ethereum",
+    "symbol": "ETH",
+    "isAllowed": true,
+    "name": "Ethereum",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "bitcoin",
+    "symbol": "BTC",
+    "isAllowed": true,
+    "name": "Bitcoin",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "ethereum",
+    "symbol": "ETH",
+    "isAllowed": true,
+    "name": "Ethereum",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "arbitrum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "42161"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "ethereum",
+    "symbol": "ETH",
+    "isAllowed": true,
+    "name": "Ethereum",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "optimism",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "10"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "tether",
+    "symbol": "USDT",
+    "isAllowed": true,
+    "name": "Tether",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "tether",
+    "symbol": "USDT",
+    "isAllowed": true,
+    "name": "Tether",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "137"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "tether",
+    "symbol": "USDT",
+    "isAllowed": true,
+    "name": "Tether",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "algorand",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "tether",
+    "symbol": "USDT",
+    "isAllowed": true,
+    "name": "Tether",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "56"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "binancecoin",
+    "symbol": "BNB",
+    "isAllowed": true,
+    "name": "Binance Coin",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "56"
+    }
+  },
+  {
+    "coinId": "binancecoin",
+    "symbol": "BNB",
+    "isAllowed": true,
+    "name": "Binance Coin",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "ripple",
+    "symbol": "XRP",
+    "isAllowed": true,
+    "name": "XRP",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "dogecoin",
+    "symbol": "DOGE",
+    "isAllowed": true,
+    "name": "Dogecoin",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "uniswap",
+    "symbol": "UNI",
+    "isAllowed": true,
+    "name": "Uniswap",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "137"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "solana",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "avaxcchain",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "43114"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "56"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "algorand",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "tron",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "optimism",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "10"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "arbitrum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "42161"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "hedera",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "stellar",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "usd-coin",
+    "symbol": "USDC",
+    "isAllowed": true,
+    "name": "USD Coin",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "fuse",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "122"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "chainlink",
+    "symbol": "LINK",
+    "isAllowed": true,
+    "name": "Chainlink",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "stellar",
+    "symbol": "XLM",
+    "isAllowed": true,
+    "name": "Stellar",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "wrapped-bitcoin",
+    "symbol": "WBTC",
+    "isAllowed": true,
+    "name": "Wrapped Bitcoin",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 8
+  },
+  {
+    "coinId": "wrapped-bitcoin",
+    "symbol": "WBTC",
+    "isAllowed": true,
+    "name": "Wrapped Bitcoin",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 8
+  },
+  {
+    "coinId": "solana",
+    "symbol": "SOL",
+    "isAllowed": true,
+    "name": "Solana",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "solana",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "eos",
+    "symbol": "EOS",
+    "isAllowed": true,
+    "name": "EOS",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "matic-network",
+    "symbol": "MATIC",
+    "isAllowed": true,
+    "name": "Polygon",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "internet-computer",
+    "symbol": "ICP",
+    "isAllowed": true,
+    "name": "Internet Computer",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "tron",
+    "symbol": "TRX",
+    "isAllowed": true,
+    "name": "TRON",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "ethereum-classic",
+    "symbol": "ETC",
+    "isAllowed": true,
+    "name": "Ethereum Classic",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "dai",
+    "symbol": "DAI",
+    "isAllowed": true,
+    "name": "Dai",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "dai",
+    "symbol": "DAI",
+    "isAllowed": true,
+    "name": "Dai",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "aave",
+    "symbol": "AAVE",
+    "isAllowed": true,
+    "name": "Aave",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "aave",
+    "symbol": "AAVE",
+    "isAllowed": true,
+    "name": "Aave",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "crypto-com-chain",
+    "symbol": "CRO",
+    "isAllowed": true,
+    "name": "Cronos",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "cronos",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "25"
+    }
+  },
+  {
+    "coinId": "cosmos",
+    "symbol": "ATOM",
+    "isAllowed": true,
+    "name": "Cosmos",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "apecoin",
+    "symbol": "APE",
+    "isAllowed": true,
+    "name": "ApeCoin",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "the-sandbox",
+    "symbol": "SAND",
+    "isAllowed": true,
+    "name": "The Sandbox",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    }
+  },
+  {
+    "coinId": "flow",
+    "symbol": "FLOW",
+    "isAllowed": true,
+    "name": "Flow",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "flow",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 8
+  },
+  {
+    "coinId": "tezos",
+    "symbol": "XTZ",
+    "isAllowed": true,
+    "name": "Tezos",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "elrond-erd-2",
+    "symbol": "EGLD",
+    "isAllowed": true,
+    "name": "MultiversX",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 12
+  },
+  {
+    "coinId": "avalanche-2",
+    "symbol": "AVAX",
+    "isAllowed": true,
+    "name": "Avalanche",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "avaxcchain",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "43114"
+    }
+  },
+  {
+    "coinId": "frax",
+    "symbol": "FRAX",
+    "isAllowed": true,
+    "name": "Frax",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "decentraland",
+    "symbol": "MANA",
+    "isAllowed": true,
+    "name": "Decentraland",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "decentraland",
+    "symbol": "MANA",
+    "isAllowed": true,
+    "name": "Decentraland",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "algorand",
+    "symbol": "ALGO",
+    "isAllowed": true,
+    "name": "Algorand",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "kusama",
+    "symbol": "KSM",
+    "isAllowed": true,
+    "name": "Kusama",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "nem",
+    "symbol": "XEM",
+    "isAllowed": true,
+    "name": "NEM",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "hedera-hashgraph",
+    "symbol": "HBAR",
+    "isAllowed": true,
+    "name": "Hedera Hashgraph",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "sushi",
+    "symbol": "SUSHI",
+    "isAllowed": true,
+    "name": "Sushi",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "sushi",
+    "symbol": "SUSHI",
+    "isAllowed": true,
+    "name": "Sushi",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "56"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "sushi",
+    "symbol": "SUSHI",
+    "isAllowed": true,
+    "name": "Sushi",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "near",
+    "symbol": "NEAR",
+    "isAllowed": true,
+    "name": "Near",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "maker",
+    "symbol": "MKR",
+    "isAllowed": true,
+    "name": "Maker",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "aptos",
+    "symbol": "APT",
+    "isAllowed": true,
+    "name": "Aptos",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "aptos",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "celo",
+    "symbol": "CELO",
+    "isAllowed": true,
+    "name": "Celo",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "celo",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "42220"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "osmosis",
+    "symbol": "OSMO",
+    "isAllowed": true,
+    "name": "Osmosis",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "osmosis",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "zencash",
+    "symbol": "ZEN",
+    "isAllowed": true,
+    "name": "Horizen",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "oec-token",
+    "symbol": "OKT",
+    "isAllowed": true,
+    "name": "OKC",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "okxchain",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "blockstack",
+    "symbol": "STX",
+    "isAllowed": true,
+    "name": "Stacks",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "basic-attention-token",
+    "symbol": "BAT",
+    "isAllowed": true,
+    "name": "Basic Attention",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "basic-attention-token",
+    "symbol": "BAT",
+    "isAllowed": true,
+    "name": "Basic Attention",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bnb",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "basic-attention-token",
+    "symbol": "BAT",
+    "isAllowed": true,
+    "name": "Basic Attention",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "zilliqa",
+    "symbol": "ZIL",
+    "isAllowed": true,
+    "name": "Zilliqa",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "zil",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 12
+  },
+  {
+    "coinId": "fantom",
+    "symbol": "FTM",
+    "isAllowed": true,
+    "name": "Fantom",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "fantom",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "250"
+    }
+  },
+  {
+    "coinId": "immutable-x",
+    "symbol": "IMX",
+    "isAllowed": true,
+    "name": "ImmutableX",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "immutable",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "harmony",
+    "symbol": "ONE",
+    "isAllowed": true,
+    "name": "Harmony",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "kadena",
+    "symbol": "KDA",
+    "isAllowed": true,
+    "name": "Kadena",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 12
+  },
+  {
+    "coinId": "wazirx",
+    "symbol": "WRX",
+    "isAllowed": true,
+    "name": "WazirX",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "56"
+    },
+    "decimals": 8
+  },
+  {
+    "coinId": "arweave",
+    "symbol": "AR",
+    "isAllowed": true,
+    "name": "Arweave",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "maiar-dex",
+    "symbol": "MEX",
+    "isAllowed": true,
+    "name": "Maiar DEX",
+    "roundOff": 0,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "multiversx",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "1inch",
+    "symbol": "1INCH",
+    "isAllowed": true,
+    "name": "1inch",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "gmx",
+    "symbol": "GMX",
+    "isAllowed": true,
+    "name": "GMX",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "arbitrum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "42161"
+    }
+  },
+  {
+    "coinId": "velas",
+    "symbol": "VLX",
+    "isAllowed": true,
+    "name": "Velas",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "velasevm",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "106"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "velas",
+    "symbol": "VLX",
+    "isAllowed": true,
+    "name": "Velas",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "iostoken",
+    "symbol": "IOST",
+    "isAllowed": true,
+    "name": "IOST",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 8
+  },
+  {
+    "coinId": "moonbeam",
+    "symbol": "GLMR",
+    "isAllowed": true,
+    "name": "Moonbeam",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "compound-governance-token",
+    "symbol": "COMP",
+    "isAllowed": true,
+    "name": "Compound",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "iotex",
+    "symbol": "IOTX",
+    "isAllowed": true,
+    "name": "IoTeX",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "iotx",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "golem",
+    "symbol": "GLM",
+    "isAllowed": true,
+    "name": "Golem",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "kava",
+    "symbol": "KAVA",
+    "isAllowed": true,
+    "name": "Kava.io",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "oasis-network",
+    "symbol": "ROSE",
+    "isAllowed": true,
+    "name": "Oasis Network",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "oasisnetwork",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "astar",
+    "symbol": "ASTR",
+    "isAllowed": true,
+    "name": "Astar",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "astar",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "592"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "nervos-network",
+    "symbol": "CKB",
+    "isAllowed": true,
+    "name": "Nervos Network",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "nervos",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 8
+  },
+  {
+    "coinId": "wax",
+    "symbol": "WAXP",
+    "isAllowed": true,
+    "name": "WAX",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "wax",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 8
+  },
+  {
+    "coinId": "tamadoge",
+    "symbol": "TAMA",
+    "isAllowed": true,
+    "name": "Tamadoge",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "verasity",
+    "symbol": "VRA",
+    "isAllowed": true,
+    "name": "Verasity",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "playdapp",
+    "symbol": "PLA",
+    "isAllowed": true,
+    "name": "PlayDapp",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "playdapp",
+    "symbol": "PLA",
+    "isAllowed": true,
+    "name": "PlayDapp",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "mask-network",
+    "symbol": "MASK",
+    "isAllowed": true,
+    "name": "Mask Network",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "mask-network",
+    "symbol": "MASK",
+    "isAllowed": true,
+    "name": "Mask Network",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "56"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "looksrare",
+    "symbol": "LOOKS",
+    "isAllowed": true,
+    "name": "LooksRare",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "hive",
+    "symbol": "HIVE",
+    "isAllowed": true,
+    "name": "Hive",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "trust-wallet-token",
+    "symbol": "TWT",
+    "isAllowed": true,
+    "name": "Trust Wallet Token",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "56"
+    }
+  },
+  {
+    "coinId": "cartesi",
+    "symbol": "CTSI",
+    "isAllowed": true,
+    "name": "Cartesi",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "aurora-near",
+    "symbol": "AURORA",
+    "isAllowed": true,
+    "name": "Aurora",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    }
+  },
+  {
+    "coinId": "aurora-near",
+    "symbol": "AURORA",
+    "isAllowed": true,
+    "name": "Aurora",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "aurora",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1313161554"
+    }
+  },
+  {
+    "coinId": "polkastarter",
+    "symbol": "POLS",
+    "isAllowed": true,
+    "name": "Polkastarter",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "polkastarter",
+    "symbol": "POLS",
+    "isAllowed": true,
+    "name": "Polkastarter",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "56"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "zoid-pay",
+    "symbol": "ZPAY",
+    "isAllowed": true,
+    "name": "ZoidPay",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "multiversx",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "joe",
+    "symbol": "JOE",
+    "isAllowed": true,
+    "name": "JOE",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "avaxcchain",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "43114"
+    }
+  },
+  {
+    "coinId": "secret",
+    "symbol": "SCRT",
+    "isAllowed": true,
+    "name": "Secret",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "hathor",
+    "symbol": "HTR",
+    "isAllowed": true,
+    "name": "Hathor",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "smooth-love-potion",
+    "symbol": "SLP",
+    "isAllowed": true,
+    "name": "Smooth Love Potion",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ronin",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "2020"
+    }
+  },
+  {
+    "coinId": "beefy-finance",
+    "symbol": "BIFI",
+    "isAllowed": true,
+    "name": "Beefy.Finance",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "56"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "utrust",
+    "symbol": "UTK",
+    "isAllowed": true,
+    "name": "Utrust",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "multiversx",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "quick",
+    "symbol": "QUICK",
+    "isAllowed": true,
+    "name": "Quickswap",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "dao-maker",
+    "symbol": "DAO",
+    "isAllowed": true,
+    "name": "DAO Maker",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "chain-games",
+    "symbol": "CHAIN",
+    "isAllowed": true,
+    "name": "Chain Games",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "clover-finance",
+    "symbol": "CLV",
+    "isAllowed": true,
+    "name": "Clover Finance",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "celo-dollar",
+    "symbol": "CUSD",
+    "isAllowed": true,
+    "name": "Celo Dollar",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "celo",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "42220"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "thunder-token",
+    "symbol": "TT",
+    "isAllowed": true,
+    "name": "ThunderCore",
+    "roundOff": 0,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "thundercore",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "108"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "ageur",
+    "symbol": "AGEUR",
+    "isAllowed": true,
+    "name": "agEUR",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "ageur",
+    "symbol": "AGEUR",
+    "isAllowed": true,
+    "name": "agEUR",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "xcad-network",
+    "symbol": "XCAD",
+    "isAllowed": true,
+    "name": "XCAD Network",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "zil",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "trustswap",
+    "symbol": "SWAP",
+    "isAllowed": true,
+    "name": "Trustswap",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "wanchain",
+    "symbol": "WAN",
+    "isAllowed": true,
+    "name": "Wanchain",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "wanchain",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "888"
+    }
+  },
+  {
+    "coinId": "klima-dao",
+    "symbol": "KLIMA",
+    "isAllowed": true,
+    "name": "Klima DAO",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 9
+  },
+  {
+    "coinId": "dock",
+    "symbol": "DOCK",
+    "isAllowed": true,
+    "name": "Dock",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "autobahn-network",
+    "symbol": "TXL",
+    "isAllowed": true,
+    "name": "Tixl",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "yield-app",
+    "symbol": "YLD",
+    "isAllowed": true,
+    "name": "YIELD App",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "splinterlands",
+    "symbol": "SPS",
+    "isAllowed": true,
+    "name": "Splintershards",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "56"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "gather",
+    "symbol": "GTH",
+    "isAllowed": true,
+    "name": "Gather",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "fuse-network-token",
+    "symbol": "FUSE",
+    "isAllowed": true,
+    "name": "Fuse",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "fuse",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "122"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "sperax-usd",
+    "symbol": "USDS",
+    "isAllowed": true,
+    "name": "Sperax USD",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "arbitrum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "42161"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "fear",
+    "symbol": "FEAR",
+    "isAllowed": true,
+    "name": "Fear",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "sperax",
+    "symbol": "SPA",
+    "isAllowed": true,
+    "name": "Sperax",
+    "roundOff": 0,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "arbitrum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "42161"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "revv",
+    "symbol": "REVV",
+    "isAllowed": true,
+    "name": "REVV",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "revv",
+    "symbol": "REVV",
+    "isAllowed": true,
+    "name": "REVV",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "flow",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "weth",
+    "symbol": "WETH",
+    "isAllowed": true,
+    "name": "WETH",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "ig-gold",
+    "symbol": "IGG",
+    "isAllowed": true,
+    "name": "IG Gold",
+    "roundOff": 0,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 6
+  },
+  {
+    "coinId": "cardano",
+    "symbol": "ADA",
+    "isAllowed": true,
+    "name": "Cardano",
+    "roundOff": 2,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "mobilecoin",
+    "symbol": "MOB",
+    "isAllowed": true,
+    "name": "MobileCoin",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "polkadot",
+    "symbol": "DOT",
+    "isAllowed": true,
+    "name": "Polkadot",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "bitcoin-cash",
+    "symbol": "BCH",
+    "isAllowed": true,
+    "name": "Bitcoin Cash",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "defichain",
+    "symbol": "DFI",
+    "isAllowed": true,
+    "name": "DeFiChain",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "litecoin",
+    "symbol": "LTC",
+    "isAllowed": true,
+    "name": "Litecoin",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "mainnet",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": null
+    }
+  },
+  {
+    "coinId": "moonriver",
+    "symbol": "MOVR",
+    "isAllowed": true,
+    "name": "Moonriver",
+    "roundOff": 8,
+    "isPayInAllowed": true,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "moonriver",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1285"
+    }
+  },
+  {
+    "coinId": "hex",
+    "symbol": "HEX",
+    "isAllowed": true,
+    "name": "HEX",
+    "roundOff": 4,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 8
+  },
+  {
+    "coinId": "terra-luna-2",
+    "symbol": "LUNA",
+    "isAllowed": true,
+    "name": "Terra",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "terra",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "gari-network",
+    "symbol": "GARI",
+    "isAllowed": true,
+    "name": "Gari Network",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "solana",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 9
+  },
+  {
+    "coinId": "freedom-jobs-business",
+    "symbol": "$FJB",
+    "isAllowed": true,
+    "name": "Freedom. Jobs. Business",
+    "roundOff": 0,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "56"
+    },
+    "decimals": 9
+  },
+  {
+    "coinId": "bhnetwork",
+    "symbol": "BHAT",
+    "isAllowed": true,
+    "name": "BHNetwork",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "multiversx",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": null
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "foodchain-global",
+    "symbol": "FOOD",
+    "isAllowed": true,
+    "name": "FoodChain Global",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "primal-b3099cd0-995a-4311-80d5-9c133153b38e",
+    "symbol": "PRIMAL",
+    "isAllowed": true,
+    "name": "PRIMAL",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "strikecoin",
+    "symbol": "STRX",
+    "isAllowed": true,
+    "name": "StrikeX",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "bsc",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "56"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "sandclock",
+    "symbol": "QUARTZ",
+    "isAllowed": true,
+    "name": "Sandclock",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "minds",
+    "symbol": "MINDS",
+    "isAllowed": true,
+    "name": "Minds",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "metasoccer",
+    "symbol": "MSU",
+    "isAllowed": true,
+    "name": "MetaSoccer",
+    "roundOff": 2,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "polygon",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "137"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "alongside-crypto-market-index",
+    "symbol": "AMKT",
+    "isAllowed": true,
+    "name": "Alongside Crypto Market Index",
+    "roundOff": 8,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "credit_debit_card"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "apple_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "google_pay"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_cash_app"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_venmo"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_zelle"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jwire"
+        },
+        {
+          "fiatCurrency": "USD",
+          "paymentMethod": "pm_jach"
+        }
+      ],
+      "chainId": "1"
+    },
+    "decimals": 18
+  },
+  {
+    "coinId": "verse-bitcoin",
+    "symbol": "VERSE",
+    "isAllowed": true,
+    "name": "Verse",
+    "roundOff": 0,
+    "isPayInAllowed": false,
+    "minAmountForPayIn": null,
+    "maxAmountForPayIn": null,
+    "network": {
+      "name": "ethereum",
+      "fiatCurrenciesNotSupported": [],
+      "chainId": "1"
+    },
+    "decimals": 18
+  }
+]

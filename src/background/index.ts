@@ -16,7 +16,7 @@ console.log(
 var cryptoCurr: string, network: string, fiat: string, targetPrice: number, updatedPrice
 
 chrome.alarms.create({
-    periodInMinutes: 1 / 6,
+    periodInMinutes: 1 / 2,
     delayInMinutes: 0
 })
 
@@ -74,10 +74,10 @@ chrome.alarms.onAlarm.addListener((alarm) => {
                     console.log("updated price - ", (1 / response.data.conversionPrice).toFixed(4))
 
                     updatedPrice = (1 / response.data.conversionPrice).toFixed(4)
-                    
+
                     if (targetPrice - 2 < updatedPrice && updatedPrice < targetPrice + 2) {
                         console.log("notification");
-                        
+
                         chrome.notifications.create(
                             "notification",
                             { type: 'basic', iconUrl: "https://i.imgur.com/xtGkeHM.jpeg", title: `${cryptoCurr} price reached ${updatedPrice} ${fiat}`, message: "some message" }
