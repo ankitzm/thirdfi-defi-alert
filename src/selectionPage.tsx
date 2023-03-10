@@ -4,17 +4,6 @@ import { ReactSearchAutocomplete } from "react-search-autocomplete"
 import moment from "moment"
 import CryptoJS from "crypto-js"
 
-interface ChainProp {
-  id: string,
-  name: string,
-  network: string,
-  fiatCurrenciesNotSupported: Array<Object>
-}
-
-interface FiatProp {
-  id: string,
-  name: string
-}
 
 function selectionPage({ chainData }) {
 

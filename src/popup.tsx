@@ -8,6 +8,7 @@ import "~base.css"
 import "~style.css"
 import SelectionPage from "~selectionPage"
 import Data from "./../hel.json"
+import Logo from "./assets/thirdFi.png"
 
 function IndexPopup() {
 
@@ -62,7 +63,7 @@ function IndexPopup() {
       .catch(err => console.error(err))
   }
 
-  localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("targetPrice") !== null ?
+  (localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("targetPrice")) !== null ?
     getData() : null
 
   // useEffect(() => {
@@ -73,16 +74,17 @@ function IndexPopup() {
     chrome.storage.local.get(["updatedPrice"], (res) => {
       setUpdatedPrice(res.updatedPrice)
     })
-
   }, [60 * 1000])
 
 
   return (
-    <div className="flex flex-col items-center justify-center h-96 w-64 border-none bg-slate-900 text-white text-2xl">
+    <div className="flex flex-col items-center justify-center h-96 w-64 border-none bg-slate-900 text-white">
+      <img src={Logo} className="inline w-20" />
+      <div className="text-sm font-bold mb-6">PRICE TRACKER</div>
       {
         (localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("targetPrice") !== null) ?
 
-          <div className="flex flex-col items-center justify-center mx-4 gap-4">
+          <div className="flex flex-col items-center justify-center mx-4 gap-4 text-xl">
             <div className="">
               Target Price - {localStorage.getItem("targetPrice")}
             </div>
@@ -90,7 +92,7 @@ function IndexPopup() {
               updatedPrice ?
                 <div className="">
                   Current Price - {updatedPrice}
-                </div> : ""
+                </div> : "updating price ..."
             }
           </div> :
           <SelectionPage chainData={Data} />

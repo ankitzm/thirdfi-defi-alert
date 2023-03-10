@@ -74,16 +74,18 @@ chrome.alarms.onAlarm.addListener((alarm) => {
                     console.log("updated price - ", (1 / response.data.conversionPrice).toFixed(4))
 
                     updatedPrice = (1 / response.data.conversionPrice).toFixed(4)
+                    
+                    if (targetPrice - 2 < updatedPrice && updatedPrice < targetPrice + 2) {
+                        console.log("notification");
+                        
+                        chrome.notifications.create(
+                            "notification",
+                            { type: 'basic', iconUrl: "https://i.imgur.com/xtGkeHM.jpeg", title: `${cryptoCurr} price reached ${updatedPrice} ${fiat}`, message: "some message" }
+                        )
+                    }
                 })
                 .catch(err => console.error(err))
 
-            if (targetPrice - 2 < updatedPrice && updatedPrice < targetPrice + 2) {
-
-                chrome.notifications.create(
-                    "notification",
-                    { type: 'basic', iconUrl: "https://i.imgur.com/xtGkeHM.jpeg", title: `${cryptoCurr} price reached ${updatedPrice} ${fiat}`, message: "some message" }
-                )
-            }
         }
 
         getData()
