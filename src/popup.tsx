@@ -12,7 +12,7 @@ import Logo from "./assets/thirdFi.png"
 
 function IndexPopup() {
 
-  const [updatedPrice, setUpdatedPrice] = useState("")
+  const [updatedPrice, setUpdatedPrice] = useState(null)
 
   const timestamp = moment().unix()
   var apiKey = process.env.API_KEY
