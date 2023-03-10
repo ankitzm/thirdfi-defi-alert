@@ -10,9 +10,13 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/storage": "^1.0.5",
+    "crypto-js": "^4.1.1",
+    "moment": "^2.29.4",
     "plasmo": "0.65.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-search-autocomplete": "^8.3.1",
     "tailwindcss": "3.2.4"
   },
   "devDependencies": {
@@ -28,6 +32,11 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "storage",
+      "alarms",
+      "notifications"
     ]
   }
 }
