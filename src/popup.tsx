@@ -12,7 +12,7 @@ import Logo from "./assets/thirdFi.png"
 
 function IndexPopup() {
 
-  const [updatedPrice, setUpdatedPrice] = useState(null)
+  const [updatedPrice, setUpdatedPrice] = useState("")
 
   const timestamp = moment().unix()
   var apiKey = process.env.API_KEY
@@ -58,12 +58,12 @@ function IndexPopup() {
       .then(response => response.json())
       .then(response => {
         console.log(response)
-        setUpdatedPrice((1 / response.data.marketConversionPrice))
+        setUpdatedPrice(1 / response.data.marketConversionPrice)
       })
       .catch(err => console.error(err))
   }
 
-  (localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("targetPrice")) !== null ?
+  (localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("minTargetPrice") && localStorage.getItem("maxTargetPrice")) !== null ?
     getData() : null
 
   // useEffect(() => {
@@ -82,15 +82,20 @@ function IndexPopup() {
       <img src={Logo} className="inline w-20" />
       <div className="text-sm font-bold mb-6">PRICE TRACKER</div>
       {
-        (localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("targetPrice") !== null) ?
+        (localStorage.getItem("fiat") && localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("minTargetPrice") && localStorage.getItem("maxTargetPrice") !== null) ?
 
-          <div className="flex flex-col items-center justify-center mx-4 gap-4 text-xl">
-            <div className="">
-              Target Price - {localStorage.getItem("targetPrice")}
+          <div className="flex flex-col justify mx-4 gap-2 text-left ml-2 text-base">
+            <div className="font-semibold mx-auto">
+              {`Crypto - ${localStorage.getItem("crypto")}`}
             </div>
+            <div className="text-sm mx-3">
+              Tracking price  from
+              <span className="font-semibold"> {localStorage.getItem("minTargetPrice")}</span> to <span className="font-semibold">{localStorage.getItem("maxTargetPrice")}</span>
+            </div>
+
             {
               updatedPrice ?
-                <div className="">
+                <div className="mt-4 mx-3">
                   Current Price - {updatedPrice}
                 </div> : "updating price ..."
             }

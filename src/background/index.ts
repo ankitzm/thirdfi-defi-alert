@@ -13,26 +13,27 @@ console.log(
     "Live now; make now always the most precious time. Now will never come again."
 )
 
-var cryptoCurr: string, network: string, fiat: string, targetPrice: number, updatedPrice
+var cryptoCurr: string, network: string, fiat: string, minTargetPrice: number, maxTargetPrice: number, updatedPrice: string | number
 
 chrome.alarms.create({
-    periodInMinutes: 1 / 2,
+    periodInMinutes: 1,
     delayInMinutes: 0
 })
 
 setInterval(() => {
-    chrome.storage.local.get(["crypto", "network", "fiat", "targetPrice"], (res) => {
+    chrome.storage.local.get(["crypto", "network", "fiat", "minTargetPrice", "maxTargetPrice"], (res) => {
         cryptoCurr = res.crypto
         network = res.network
         fiat = res.fiat
-        targetPrice = res.targetPrice
+        minTargetPrice = res.minTargetPrice
+        maxTargetPrice = res.maxTargetPrice
         console.log(res);
     })
 }, 20 * 1000)
 
 
 chrome.alarms.onAlarm.addListener((alarm) => {
-    if (cryptoCurr && network && fiat && targetPrice) {
+    if (cryptoCurr && network && fiat && minTargetPrice && maxTargetPrice) {
 
         let timestamp = moment().unix()
         let baseString = `${url}&method=${method}&timestamp=${timestamp}`
@@ -75,7 +76,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 
                     updatedPrice = (1 / response.data.conversionPrice).toFixed(4)
 
-                    if (targetPrice - 2 < updatedPrice && updatedPrice < targetPrice + 2) {
+                    if (minTargetPrice < parseFloat(updatedPrice) && parseFloat(updatedPrice) < maxTargetPrice) {
                         console.log("notification");
 
                         chrome.notifications.create(

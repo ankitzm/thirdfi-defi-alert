@@ -19,7 +19,8 @@ function selectionPage({ chainData }) {
   })
 
   const [cryptoPrice, setCryptoPrice] = useState(null)
-  const [targetPrice, setTargetPrice] = useState(null)
+  const [minTargetPrice, setMinTargetPrice] = useState(null)
+  const [maxTargetPrice, setMaxTargetPrice] = useState(null)
   const [loader, setLoader] = useState(false)
 
   var chainName = []
@@ -193,14 +194,17 @@ function selectionPage({ chainData }) {
               {`Price - ${cryptoPrice ? cryptoPrice.toFixed(4) : ""}`}
             </div>
 
-            <input type="text" placeholder="target price" className="px-3 w-full py-3 mt-4 placeholder-slate-400 text-slate-900 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setTargetPrice(e.target.value)} />
+            <input type="text" placeholder="mininum target price" className="px-3 w-full py-3 mt-4 placeholder-slate-400 text-slate-900 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setMinTargetPrice(e.target.value)} />
+            <input type="text" placeholder="maximum target price" className="px-3 w-full py-3 mt-4 placeholder-slate-400 text-slate-900 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setMaxTargetPrice(e.target.value)} />
+
             <button className="bg-blue-500 hover:bg-blue-700 text-white text-base font-bold py-2 px-4 mt-4 rounded w-full"
               onClick={() => {  
-                if (targetPrice == null) {
+                if ((minTargetPrice && maxTargetPrice) == null) {
                   window.alert("Please set a target price first")
                 }
                 else {
-                  localStorage.setItem("targetPrice", targetPrice)
+                  localStorage.setItem("minTargetPrice", minTargetPrice)
+                  localStorage.setItem("maxTargetPrice", maxTargetPrice)
 
                   chrome.storage.local.set({
                     crypto: localStorage.getItem("crypto")
@@ -212,7 +216,10 @@ function selectionPage({ chainData }) {
                     fiat: localStorage.getItem("fiat")
                   })
                   chrome.storage.local.set({
-                    targetPrice: localStorage.getItem("targetPrice")
+                    minTargetPrice: localStorage.getItem("minTargetPrice")
+                  })
+                  chrome.storage.local.set({
+                    maxTargetPrice: localStorage.getItem("maxTargetPrice")
                   })
 
                   window.alert("Target price set, please reopen the extention to check the updated price. \n We will notify you once the price reaches the target !!")
