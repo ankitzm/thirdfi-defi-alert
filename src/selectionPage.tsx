@@ -20,6 +20,7 @@ function selectionPage({ chainData }) {
 
   const [cryptoPrice, setCryptoPrice] = useState(null)
   const [targetPrice, setTargetPrice] = useState(null)
+  const [loader, setLoader] = useState(false)
 
   var chainName = []
   var fiatList = [
@@ -71,6 +72,7 @@ function selectionPage({ chainData }) {
   }
 
   function getData() {
+    setLoader(true)
     fetch(
       url,
       options,
@@ -85,6 +87,7 @@ function selectionPage({ chainData }) {
         localStorage.setItem("crypto", currChain.id)
         localStorage.setItem("network", currChain.network)
         localStorage.setItem("fiat", currFiat.id)
+        setLoader(false)
       })
       .catch(err => console.error(err))
   }
@@ -170,7 +173,15 @@ function selectionPage({ chainData }) {
           <button className="bg-blue-500 hover:bg-blue-700 text-white text-base font-bold py-2 px-4 mt-4 rounded" onClick={() => {
             !(currChain.id == "" && currFiat.id == "") ? getData() : window.alert("please provide input to above field")
           }}>
-            Fetch Price
+            {loader ? <div
+              className="inline-block h-4 w-4 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+              role="status">
+              <span
+                className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Loading...</span>
+            </div> : <>
+              Fetch Price </>
+            }
           </button>
         </>
           :
@@ -183,27 +194,35 @@ function selectionPage({ chainData }) {
             </div>
 
             <input type="text" placeholder="target price" className="px-3 w-full py-3 mt-4 placeholder-slate-400 text-slate-900 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setTargetPrice(e.target.value)} />
-            <button className="bg-blue-500 hover:bg-blue-700 text-white text-base font-bold py-2 px-4 mt-4 rounded w-full" onClick={() => {
-              localStorage.setItem("targetPrice", targetPrice)
+            <button className="bg-blue-500 hover:bg-blue-700 text-white text-base font-bold py-2 px-4 mt-4 rounded w-full"
+              onClick={() => {  
+                if (targetPrice == null) {
+                  window.alert("Please set a target price first")
+                }
+                else {
+                  localStorage.setItem("targetPrice", targetPrice)
 
-              chrome.storage.local.set({
-                crypto: localStorage.getItem("crypto")
-              })
-              chrome.storage.local.set({
-                network: localStorage.getItem("network")
-              })
-              chrome.storage.local.set({
-                fiat: localStorage.getItem("fiat")
-              })
-              chrome.storage.local.set({
-                targetPrice: localStorage.getItem("targetPrice")
-              })
-            }}>
+                  chrome.storage.local.set({
+                    crypto: localStorage.getItem("crypto")
+                  })
+                  chrome.storage.local.set({
+                    network: localStorage.getItem("network")
+                  })
+                  chrome.storage.local.set({
+                    fiat: localStorage.getItem("fiat")
+                  })
+                  chrome.storage.local.set({
+                    targetPrice: localStorage.getItem("targetPrice")
+                  })
+
+                  window.alert("Target price set, please reopen the extention to check the updated price. \n We will notify you once the price reaches the target !!")
+                }
+              }}>
               Set Target Price
             </button>
           </div>
       }
-    </div>
+    </div >
   )
 }
 
