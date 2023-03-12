@@ -148,8 +148,8 @@ function selectionPage({ chainData }) {
   return (
     <div className='flex flex-col items-center justify-center'>
       {
-        // !cryptoPrice
-        !(localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("fiat")) ? <>
+        // !(localStorage.getItem("crypto") && localStorage.getItem("network") && localStorage.getItem("fiat"))
+        !cryptoPrice ? <>
           <div className="w-48">
             <ReactSearchAutocomplete
               items={chainList}
