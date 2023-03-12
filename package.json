@@ -1,7 +1,7 @@
 {
   "name": "thirdfi-defi-alert",
   "displayName": "ThirdFi DeFi Alert",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Browser extention to track and get alert for different token value for BUY/SELL opportunities.",
   "author": "Ankit Singh",
   "scripts": {

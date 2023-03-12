@@ -4,7 +4,6 @@ import { ReactSearchAutocomplete } from "react-search-autocomplete"
 import moment from "moment"
 import CryptoJS from "crypto-js"
 
-
 function selectionPage({ chainData }) {
 
   const [chainList, setChainList] = useState([])
@@ -81,7 +80,11 @@ function selectionPage({ chainData }) {
       .then(response => response.json())
       .then(response => {
         console.log(response)
-        if (response.statusCode !== 201) return
+        if (response.statusCode !== 201) {
+          window.alert(response.message[0])
+          window.close()
+          return
+        }
 
         var price = 1 / response.data.marketConversionPrice
         setCryptoPrice(price)
@@ -198,7 +201,7 @@ function selectionPage({ chainData }) {
             <input type="text" placeholder="maximum target price" className="px-3 w-full py-3 mt-4 placeholder-slate-400 text-slate-900 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" onChange={e => setMaxTargetPrice(e.target.value)} />
 
             <button className="bg-blue-500 hover:bg-blue-700 text-white text-base font-bold py-2 px-4 mt-4 rounded w-full"
-              onClick={() => {  
+              onClick={() => {
                 if ((minTargetPrice && maxTargetPrice) == null) {
                   window.alert("Please set a target price first")
                 }
@@ -223,6 +226,7 @@ function selectionPage({ chainData }) {
                   })
 
                   window.alert("Target price set, please reopen the extention to check the updated price. \n We will notify you once the price reaches the target !!")
+                  window.close()
                 }
               }}>
               Set Target Price

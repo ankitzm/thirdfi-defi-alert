@@ -8,11 +8,6 @@ var secretKey = process.env.CLIENT_SECRET
 var url = "https://api.thirdfi.org/api/v1/payment/currency-price"
 var method = "POST"
 
-
-console.log(
-    "Live now; make now always the most precious time. Now will never come again."
-)
-
 var cryptoCurr: string, network: string, fiat: string, minTargetPrice: number, maxTargetPrice: number, updatedPrice: string | number
 
 chrome.alarms.create({
@@ -27,7 +22,6 @@ setInterval(() => {
         fiat = res.fiat
         minTargetPrice = res.minTargetPrice
         maxTargetPrice = res.maxTargetPrice
-        console.log(res);
     })
 }, 20 * 1000)
 
@@ -81,7 +75,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 
                         chrome.notifications.create(
                             "notification",
-                            { type: 'basic', iconUrl: "https://i.imgur.com/xtGkeHM.jpeg", title: `${cryptoCurr} price reached ${updatedPrice} ${fiat}`, message: "some message" }
+                            { type: 'basic', iconUrl: "./src/assets/thirdFi.png", title: `${cryptoCurr} price reached ${updatedPrice} ${fiat}`, message: "some message" }
                         )
                     }
                 })
@@ -91,6 +85,4 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 
         getData()
     } else console.log("none");
-
-    console.log(alarm);
 })
