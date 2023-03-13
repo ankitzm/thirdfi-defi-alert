@@ -75,7 +75,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 
                         chrome.notifications.create(
                             "notification",
-                            { type: 'basic', iconUrl: "./src/assets/thirdFi.png", title: `${cryptoCurr} price reached ${updatedPrice} ${fiat}`, message: "some message" }
+                            { type: 'basic', iconUrl: "https://raw.githubusercontent.com/ankitzm/thirdfi-defi-alert/master/src/assets/thirdFi.png", title: "ThirdFi DeFi Alert", message: `${cryptoCurr} price reached ${updatedPrice} ${fiat}` }
                         )
                     }
                 })
