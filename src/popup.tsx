@@ -99,6 +99,22 @@ function IndexPopup() {
                   Current Price - {updatedPrice}
                 </div> : "updating price ..."
             }
+
+            {/* reset button */}
+            <button className="bg-blue-500 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 mt-4 rounded w-32 absolute top-2 right-2"
+              onClick={() => {
+                localStorage.removeItem("fiat")
+                localStorage.removeItem("crypto")
+                localStorage.removeItem("network")
+                localStorage.removeItem("minTargetPrice")
+                localStorage.removeItem("maxTargetPrice")
+
+                chrome.storage.local.remove(["fiat", "crypto", "network", "minTargetPrice", "maxTargetPrice"])
+                window.close()
+              }}
+            >
+              Reset alerts
+            </button>
           </div> :
           <SelectionPage chainData={Data} />
       }
